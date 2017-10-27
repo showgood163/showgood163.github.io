@@ -33,9 +33,13 @@ There may be some mistakes.
 `git reset commitSHA1`: back to the specific commit state.  
 `git rm filename`: reverse to add.  
 `git checkout filename`: undo some file delete ops.  
-`git remote add origin git@github.com:username/repositoryname.git`: commit the local repo 'origin' to the remote repo.  
+`git remote add origin git@github.com:username/repositoryname.git`: commit the local repo 'origin' to the remote repo. Before using this command you need to add a public key to your github account.
 `git push origin master`: merge the 'origin' to the master brench.  
 `git clone git@github.com:username/repositoryname.git`: copy the whole remote repo to the local repo.  
 `git pull --all`: get all the updates from the remote repo.
+`git status`: show the current status of this repo. Using this to find what you need to do before commit/push ops.
+`git log`: show the commit history of this repo.
+`git reflog`: show the command history of this repo. Using this to find the commits you reseted.
+`git diff filename`: show the changes of between the current and the last commit state of the specific file.
 
 [Liao Xuefeng's blog]: https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
